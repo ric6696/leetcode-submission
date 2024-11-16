@@ -40,12 +40,12 @@ Each problem is saved in a separate file
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/leetcode-solutions.git
+   git clone https://github.com/ric6696/Leetcode.git
    ```
 
 2. Navigate into the repository:
    ```bash
-   cd leetcode-solutions
+   cd Leetcode
    ```
 
 3. Choose a problem solution to review or modify. Each solution is in a separate file or folder named according to the problem title.
