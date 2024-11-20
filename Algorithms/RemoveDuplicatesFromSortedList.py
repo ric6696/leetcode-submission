@@ -35,18 +35,6 @@ def main():
     solution = Solution()
 
     nums = [1, 1, 2, 3, 3]
-    # dummy = current = ListNode(0)
-
-    # i = 0
-    # while i < len(nums):
-    #     newNode = ListNode(nums[i])
-    #     current.next = newNode
-    #     current = current.next
-    #     i += 1
-
-    # listnode = dummy.next
-    # dummy = None
-
     listnode = listToLinkedList(nums)
     solution.deleteDuplicates(listnode)
 
