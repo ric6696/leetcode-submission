@@ -17,11 +17,20 @@ class Solution(object):
         print(nums)
         return len(nums)
 
+    def removeDuplicatesArray(self, nums):
+        l = 1
+        for r in range(1, len(nums)):
+            if nums[r] != nums[r - 1]:
+                nums[l] = nums[r]
+                l += 1
+        return nums[:l]
+
 
 def main():
     solution = Solution()
-    nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 3]
+    nums = [0, 0, 5, 3, 2, 6, 8, 8, 8]
     print(solution.removeDuplicates(nums))
+    print(solution.removeDuplicatesArray(nums))
 
     return 0
 
