@@ -24,9 +24,19 @@ def countPrefixSuffixPairs(words):
     return cnt
 
 
+def countPrefixSuffix(words):
+    cnt = 0
+    for i in range(0, len(words)):
+        for j in range(i + 1, len(words)):
+            if words[j].startswith(words[i]) and words[j].endswith(words[i]):
+                cnt += 1
+    return cnt
+
+
 def main():
     words = ["pa", "papa", "ma", "mama"]
-    print(countPrefixSuffixPairs(words))
+    # print(countPrefixSuffixPairs(words))
+    print(countPrefixSuffix(words))
 
 
 if __name__ == "__main__":
