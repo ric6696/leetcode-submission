@@ -14,6 +14,7 @@ def findNumbers(nums):
     return res
 
 
+# Using math library log
 def findNumbersMath(nums):
     res = 0
     for n in nums:
