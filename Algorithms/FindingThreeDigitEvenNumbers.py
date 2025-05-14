@@ -12,7 +12,7 @@ def findEvenNumbers(digits):
             mp[d] = 1
 
     # exclude the case of leading zero, and time complexity to O(n)
-    for n in range(100, 1000):
+    for n in range(100, 150):
         num = n
         if n % 2 == 0:
             mpp = {}
