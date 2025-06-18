@@ -5,10 +5,13 @@ def lengthOfLongestSubstring(s):
     max_len = left = 0
     cnt = {}
 
-    for right, c in enumerate(s):
-        cnt[c] = 1 + cnt.get(c, 0)
+    for right in range(len(s)):
+        if s[right] in cnt:
+            cnt[s[right]] += 1
+        else:
+            cnt[s[right]] = 1
 
-        while cnt[c] > 1:
+        while cnt[s[right]] > 1:
             cnt[s[left]] -= 1
             left += 1
 
